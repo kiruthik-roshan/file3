@@ -1,11 +1,15 @@
 #time and threading modules
 import threading
 import time
-j= [range(100)]
+
 def q ():
-    while global j<=0:
+   for i in range (150):
+       j=i
+       if j >=0:
+    
         print("yes")
-        time.sleep(1)
-t1=threading.Threads(target=q,demon=true)
+        time.sleep(0)
+t1=threading.Thread(target=q)
 t1.start()
+
 
